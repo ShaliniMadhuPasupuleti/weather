@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Application</title>
+</head>
+<body>
+    <center>
+        <h1>weather App</h1>
+        <form id="formy">
+            <input type="text" placeholder="Enter city" id="info"/>
+        <button>get Weather Information</button>
+        </form>
+        <div id="display">
+
+        </div>
+    </center>
+    <script>
+        //data collected
+        let formy=document.getElementById('formy');
+        let inputValue=document.getElementById('info');
+        let display=document.getElementById('display');
+        let apiKey="5ea0a68bd69e3f94463e6aa24b6decc3";
+        //submitting the form
+        formy.addEventListener("submit",(event)=>{
+          event.preventDefault();
+          let url=`https://api.openweathermap.org/data/2.5/weather?q=${inputValue.value}&appid=${apiKey}&units=metri`;
+          fetch(url)
+            .then((response) => {
+                console.log(response);
+                return response.json();
+        })
+        .then((result) => {
+            console.log(result);
+            display.innerHTML = `<h3>City name is:${result.name}</h3>
+        <h4>Temperature is:${result.main.temp}<sup>o</sup></h4>
+        <p>Description of the clouds:${result.weather[0].description}</p>`;
+        })
+        .catch((error) => {
+            alert("please enter valid city")
+        })
+    })
+
+    </script>
+</body>
+</html>

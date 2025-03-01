@@ -1,0 +1,59 @@
+body {
+    background-color: #f8f9fa; /* Light gray background */
+    font-family: sans-serif;
+}
+
+.container {
+    margin-top: 50px;
+}
+
+h1 {
+    color: #343a40; /* Dark gray heading */
+    margin-bottom: 30px;
+}
+
+#formy {
+    margin-bottom: 20px;
+}
+
+#info {
+    padding: 10px;
+    border: 1px solid #ced4da; /* Light gray border for input */
+    border-radius: 5px;
+    width: 300px; /* Adjust width as needed */
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007bff; /* Blue button */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px; /* Space between input and button */
+}
+
+button:hover {
+    background-color: #0069d9; /* Darker blue on hover */
+}
+
+#display {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+#display h3 {
+    color: #343a40;
+    margin-bottom: 10px;
+}
+
+#display h4 {
+    color: #007bff; /* Blue temperature */
+    margin-bottom: 10px;
+}
+
+#display p {
+    color: #6c757d; /* Gray description */
+}
