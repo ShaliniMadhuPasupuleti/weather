@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Balance page</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Ancizar+Serif:ital,wght@0,300..900;1,300..900&family=Bitter:wght@100..900&family=Dancing+Script:wght@400..700&family=Heebo:wght@100..900&family=Kalam:wght@300;400;700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Monomakh&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+PhagsPa&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Pacifico&family=Playwrite+AU+VIC+Guides&family=Playwrite+NL+Guides&family=Playwrite+TZ+Guides&family=Playwrite+US+Trad+Guides&family=Playwrite+VN+Guides&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            background-image: url("https://img.freepik.com/premium-photo/businessman-business-meeting-counting-paid-money-after-negotiations-with-business-partners_38335-510.jpg?ga=GA1.1.1323557368.1735558898&semt=ais_hybrid&w=740");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .heading {
+            margin-top: 20%;
+            color: rgba(42, 10, 227, 0.831);
+            font-size: 2.3rem;
+            border-radius: 20px;
+            padding: 20px;
+        }
+
+        form {
+            width: 45%;
+            background-color: white;
+            margin-right: 45%;
+            border-radius: 25px;
+        }
+
+        label {
+            color: rgb(8, 93, 99);
+            font-size: 2rem;
+        }
+
+        input {
+            font-size: 1.2rem;
+            outline: none;
+            padding: 10px;
+            border-radius: 20px;
+            outline: none;
+        }
+
+        ::placeholder {
+            font-size: 1.2rem;
+        }
+
+        button {
+            font-size: 1.2rem;
+            border-radius: 25px;
+            border: none;
+            padding: 15px;
+            margin-bottom: 30px;
+            background-color: aquamarine;
+            margin-right: 15px;
+            font-family: "Montserrat", sans-serif;
+            font-weight: 600;
+        }
+
+        button:hover {
+            background-color: rgb(222, 196, 49);
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+        <form method="post">
+            <h1 class="heading">BALANCE</h1>
+            <label for="">Your balance is : {{balance_amount}}</label> <br> <br>
+            <button type="button" onclick="location.href='dashboard.html';">BACK</button>
+        </form>
+    </center>
+</body>
+
+</html>

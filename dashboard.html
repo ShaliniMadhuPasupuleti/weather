@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Ancizar+Serif:ital,wght@0,300..900;1,300..900&family=Bitter:wght@100..900&family=Dancing+Script:wght@400..700&family=Heebo:wght@100..900&family=Kalam:wght@300;400;700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Monomakh&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+PhagsPa&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Pacifico&family=Playwrite+AU+VIC+Guides&family=Playwrite+NL+Guides&family=Playwrite+TZ+Guides&family=Playwrite+US+Trad+Guides&family=Playwrite+VN+Guides&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <title>Dashboard</title>
+    <style>
+        body {
+            background-image: url("https://www.cm-alliance.com/hubfs/183889214_m_normal_none%20%281%29.webp");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .dashboard {
+            margin-left: 40%;
+            margin-top: 15%;
+            padding-left: 15%;
+        }
+
+        h1 {
+            font-size: 2.4rem;
+            color: rgb(25, 207, 235);
+            font-family: "Raleway", sans-serif;
+        }
+
+        button {
+            font-size: 1.3rem;
+            font-family: serif;
+            font-weight: 500;
+            padding: 13px;
+            border-radius: 25px;
+            border: none;
+            margin-bottom: 10px;
+            margin-left: 30px;
+            width: 35%;
+        }
+
+        #logout {
+            width: 76%;
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+        <h2 style="color: white;font-size: 2rem;">{{template_username}}</h2>
+    </center>
+    <div class="dashboard">
+        <h1>Welcome to ATM Dashboard</h1>
+        <a href="{{url_for('deposit',username=template_username)}}"><button>Deposit</button></a>
+        <a href="{{url_for('withdraw',username=template_username)}}"><button>Withdraw</button></a>
+        <a href="{{url_for('balance',username=template_username)}}"><button>Check Balance</button></a>
+        <a href="{{url_for('delete_acc',username=template_username)}}"><button id="delete">Delete Account</button></a>
+        <a href="{{url_for('logout',username=template_username)}}"><button id="logout">Logout</button></a>
+    </div>
+</body>
+
+</html>

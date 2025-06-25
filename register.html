@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Ancizar+Serif:ital,wght@0,300..900;1,300..900&family=Bitter:wght@100..900&family=Dancing+Script:wght@400..700&family=Heebo:wght@100..900&family=Kalam:wght@300;400;700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Monomakh&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+PhagsPa&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Pacifico&family=Playwrite+AU+VIC+Guides&family=Playwrite+NL+Guides&family=Playwrite+TZ+Guides&family=Playwrite+US+Trad+Guides&family=Playwrite+VN+Guides&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <title>Register page</title>
+    <style>
+        body {
+            margin: 0;
+            margin-top: 90px;
+            background-image: url("https://static.vecteezy.com/system/resources/previews/023/221/109/non_2x/banking-and-finance-concept-digital-connect-system-financial-and-banking-technology-with-integrated-circles-glowing-line-icons-and-on-blue-background-design-vector.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        h1 {
+            font-family: "Dancing Script", cursive;
+            color: #00A8E8;
+            font-size: 2.5rem;
+        }
+
+        form {
+            width: 45%;
+            margin-right: 66%;
+            border-radius: 2%;
+        }
+
+        label {
+            color: white;
+            font-size: 1.3rem;
+        }
+
+        input {
+            width: 50%;
+            padding: 10px;
+            outline: none;
+            border-radius: 12px;
+            border: none;
+            margin-top: 10px;
+        }
+
+        :placeholder-shown {
+            font-size: 1rem;
+        }
+
+        button {
+            font-size: 1.2rem;
+            background-color: #00A8E8;
+            color: white;
+            border-radius: 12px;
+            border: none;
+            padding: 10px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+        <form method="post">
+            <h1>REGISTRATION</h1>
+            <div class="form-group">
+                <label for="">Username</label>
+                <input type="text" placeholder="Enter your username" name="username"> <br><br>
+                <label for="">Email ID</label>
+                <input type="email" placeholder="Enter your email" name="email"> <br><br>
+                <label for="">Password</label>
+                <input type="password" placeholder="Enter your password" name="pwd"><br><br>
+                <label for="">PIN NO</label>
+                <input type="number" placeholder="Enter your pin number" name="pin"><br><br>
+            </div>
+            <button>SUBMIT</button>
+        </form>
+    </center>
+</body>
+
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deposit page</title>
+    <style>
+        body {
+            margin: 0;
+            background-image: url("https://img.freepik.com/premium-photo/businessman-holds-out-indian-rupee-money-bag-getting-grant-easy-money-salary-benefits-profit_1048944-5529930.jpg?ga=GA1.1.1323557368.1735558898&semt=ais_hybrid&w=740");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .heading {
+            margin-top: 20%;
+            color: rgb(20, 98, 98);
+            font-size: 2.3rem;
+            padding: 30px;
+        }
+
+        form {
+            margin-right: 45%;
+            background-color: aliceblue;
+            margin-top: 20px;
+            width: 40%;
+            border-radius: 25px;
+        }
+
+        label {
+            color: rgb(16, 128, 225);
+            font-size: 2rem;
+        }
+
+        input {
+            font-size: 1.2rem;
+            outline: none;
+            border-radius: 15px;
+            padding: 10px;
+        }
+
+        ::placeholder {
+            font-size: 1.2rem;
+        }
+
+        button {
+            font-size: 1.2rem;
+            border-radius: 25px;
+            border: none;
+            padding: 10px;
+            background-color: rgb(227, 133, 66);
+        }
+
+        button:hover {
+            background-color: rgb(235, 166, 116);
+        }
+
+        .btn {
+            margin-bottom: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+        <form method="post">
+            <h1 class="heading">DEPOSIT</h1>
+            <label for="">Amount :</label>
+            <input type="number" placeholder="Enter amount" name="amount"> <br> <br>
+            <button>SUBMIT</button> <br> <br>
+            <button type="button" class="btn" onclick="location.href='dashboard.html';">BACK</button>
+        </form>
+    </center>
+</body>
+
+</html>
